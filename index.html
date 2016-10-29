@@ -3,12 +3,43 @@
 <meta charset="utf-8">
 <title>ProgFrog</title>
 <style>
+/* For desktop */
+@media only screen and (min-width: 768px) {
+  
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+}
+
+/*border: 1px solid red;*/
+
+body{
+  width: 750px;
+  margin:  auto;
+}
+}
+
+
 /* For all */
 @import url("hover-min.css");
 body {
   font: 400 16px/1.5 "futura-pt",Futura,Arial,sans-serif;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffff00;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -18,16 +49,43 @@ body {
   padding: none;
 }
 
-#nav{
+h1{
+	text-transform: uppercase;
+}
+
+img{
+	padding: 5px 5px;
+}
+
+a {
+  color: #cc0000;
+  text-decoration: none;
+  font-weight: bold; 
+  padding: 50px;
+  text-align: center;}
+a:hover {
+    color: #cc0000;
+    text-decoration: underline; 
+    }
+p {
+	padding: 5px 60px;
+}
+
+#navigation{
 	position: fixed;
-	background-color: white;
+	height: 20px;
+	opacity: 50%;
+
+	
 }
 #about{
 	background-color: #ffff00;
 }
 #contact{
-	background-color: green;
+	background-color: #339966;
 }
+
+
 </style>
 <script type="text/javascript">
      $(document).ready(function(){
@@ -38,14 +96,14 @@ body {
 </head> 
 
 <body>
-	<div id="nav">
+	<div id="navigation">
 		
 		<a href="#about">about</a>
 		<a href="#contact">contact</a>
 	</div>
 	
 	<div id="ProgFrog">
-		<img src="/assets/progfrogicon@2x.png">
+		<img src="progfrogicon@2x.png">
 		<h1>ProgFrog</h1>
 		<h2>If a picture is worth a thousand words, why do we trust the number on the scale?</hr>
 		<p> Lorem ipsum adsflkjsdlfkja dsf <br>
@@ -57,8 +115,14 @@ body {
 		lkasdjflakjdsf </p>
 	</div>
 	<div id="about">
-		<h1>About</h1>
-		<p>The scale has always been my weak point. There's something about stepping on the scale that is crushing. </p>
+		<h1>ABOUT</h1>
+		<p>The scale can be scary. Although we're smart enough to realize that the number on the scale doesn't tell the whole story, we can't but help feeling something when the numbers pop up. Whether the goal is lose or gain weight, the scale seems to be king in the measurement of progress.
+		<p>
+		If a picture is worth a thousand words, why do we trust the number on the scale?
+		</p>
+		<p>
+		This project was conceived of by Chithra Venkatesan in Jan 2015 for her final project in the Spring 2015 General Assembly Product Management course. 
+		</p>
 		<iframe src="//www.slideshare.net/slideshow/embed_code/key/hNC9WYI1s4BbL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/chithra1/progfrog-presentation" title="ProgFrog Presentation" target="_blank">ProgFrog Presentation</a> </strong> from <strong><a target="_blank" href="//www.slideshare.net/chithra1">Chithra Venkatesan</a></strong> </div>
 		<p> Lorem ipsum adsflkjsdlfkja dsf <br>
 		alsdkjfa;lsdkjfal;dsf <br>
