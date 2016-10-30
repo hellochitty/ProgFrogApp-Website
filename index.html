@@ -6,31 +6,15 @@
 /* For desktop */
 @media only screen and (min-width: 768px) {
   
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    
-}
-
-/*border: 1px solid red;*/
+border: 1px solid red;
 
 body{
-  width: 750px;
+  width: 100%;
   margin:  auto;
 }
+
+
 }
 
 
@@ -39,7 +23,7 @@ body{
 body {
   font: 400 16px/1.5 "futura-pt",Futura,Arial,sans-serif;
   color: #000000;
-  background-color: #ffff00;
+  background-color: 	#F5F5F5;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -51,21 +35,24 @@ body {
 
 h1{
 	text-transform: uppercase;
+	font-weight: bolder;
+	color: 	#2F4F4F;
+	padding-left: 50px;
 }
 
-img{
-	padding: 5px 5px;
+#image{
+	margin: 100px 100px;
 }
 
-a {
-  color: #cc0000;
+#navigation a {
+  color: 	#191970;
   text-decoration: none;
   font-weight: bold; 
-  padding: 50px;
+  padding: 0px 20px;
   text-align: center;}
 a:hover {
     color: #cc0000;
-    text-decoration: underline; 
+
     }
 p {
 	padding: 5px 60px;
@@ -73,16 +60,59 @@ p {
 
 #navigation{
 	position: fixed;
+   	top: 0;
+   	right: 0;
 	height: 20px;
 	opacity: 50%;
 
 	
 }
+#navigation-2{
+	position: fixed;
+   	width: 100%;
+   	top: 0;
+	height: 20px;
+	opacity: 50%;
+	background-color: #F5F5F5;
+
+	
+}
+#progfrog{
+	width: 80%;
+	 margin:  auto;
+}
+
 #about{
-	background-color: #ffff00;
+
 }
 #contact{
-	background-color: #339966;
+
+}
+#features{
+	background-color: #708090;
+}
+#download{
+	background-color: #2F4F4F;
+	color: #ffffff;
+}
+
+
+#tagline {
+	color: 	#708090;
+	text-align: center;
+	font-size: 65px;
+	line-height: 75px;
+}
+
+#title{
+	color: 	#2F4F4F;
+	text-align: center;
+	font-size: 100px;
+}
+
+.block {
+	padding: 50px 0px;
+	border:solid #ff0000; 
 }
 
 
@@ -96,25 +126,36 @@ p {
 </head> 
 
 <body>
+	<div id="navigation-2">
 	<div id="navigation">
-		
+		<a href="#download">download</a>
+		<a href="#download">features</a>
 		<a href="#about">about</a>
 		<a href="#contact">contact</a>
 	</div>
-	
-	<div id="ProgFrog">
-		<img src="progfrogicon@2x.png">
-		<h1>ProgFrog</h1>
-		<h2>If a picture is worth a thousand words, why do we trust the number on the scale?</hr>
-		<p> Lorem ipsum adsflkjsdlfkja dsf <br>
-		alsdkjfa;lsdkjfal;dsf <br>
-		alsdkjfa;lsdkjfal;dsf <br>
-		alsdkjfa;lsdkjfal;dsf <br>
-		alsdkjfa;lsdkjfal;dsf <br>
-
-		lkasdjflakjdsf </p>
 	</div>
-	<div id="about">
+	<div class="block" id="progfrog">
+		<!--
+		<img id="image" src="progfrogicon@2x.png">
+		<img id="image" src="/Users/Chithra/Documents/ProgFrogApp-Website/assets/progfrogicon@2x.png"> -->
+
+		<h1 id="title">ProgFrog</h1>
+		<h2  id="tagline">If a picture is worth a thousand words, why do we trust the number on the scale?</hr>
+	</div>
+	<div class= "block"  id="download">
+		<p id="tagline">Coming Soon!</p>
+	</div>
+	<div class= "block"  id="features">
+		<h1>Features</h1>
+		<ul>
+			<li>take pictures</li>
+			<li>overlay previous photo</li>
+			<li>create progress GIFs</li>
+			<li>view your changes</li>
+			<li>share victories</li>
+		</ul>
+	</div>	
+	<div class= "block"  id="about">
 		<h1>ABOUT</h1>
 		<p>The scale can be scary. Although we're smart enough to realize that the number on the scale doesn't tell the whole story, we can't but help feeling something when the numbers pop up. Whether the goal is lose or gain weight, the scale seems to be king in the measurement of progress.
 		<p>
@@ -133,7 +174,7 @@ p {
 
 		lkasdjflakjdsf </p>
 	</div>
-	<div id="contact">
+	<div class= "block"  id="contact">
 		<h1>contact</h1>
 		<p> Lorem ipsum adsflkjsdlfkja dsf <br>
 		alsdkjfa;lsdkjfal;dsf <br>
